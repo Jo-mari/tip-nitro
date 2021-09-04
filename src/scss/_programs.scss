@@ -1,0 +1,48 @@
+.program-section {
+  font-size: 1.6rem;
+  height: 130vh;
+  padding: 3rem;
+  background-color: $color-white;
+  justify-content: center;
+
+  #orange-text {
+    color: $color-orange-1;
+    font-weight: 500;
+  }
+
+  &__header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+    & > h1 {
+      font-size: 5rem;
+      font-weight: 400;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      color: $primary-background;
+    }
+
+    p {
+      margin-top: 1.5rem;
+      font-size: 2.2rem;
+      text-align: center;
+      color: $primary-background;
+      width: 90rem;
+    }
+  }
+  .program-section-img-container {
+    // margin: 2rem 0 0 23rem;
+    padding-left: 23rem;
+    padding-top: 3rem;
+
+    .program-section-img1 {
+      background-image: url(../assets/img/Programs.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 80rem;
+      width: 80rem;
+    }
+  }
+}

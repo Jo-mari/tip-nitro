@@ -1,0 +1,24 @@
+#footer {
+  background-color: $primary-background;
+  height: 15rem;
+
+  .footer-container {
+    text-align: center;
+    padding: 5rem 0 0 0;
+
+    p {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 3rem;
+    }
+
+    .social-media-icon {
+      i {
+        color: $color-white;
+        margin: auto;
+        width: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

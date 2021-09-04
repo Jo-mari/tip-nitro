@@ -1,0 +1,203 @@
+#showcase {
+  color: $color-white;
+  text-align: center;
+  font-size: 1.6rem;
+
+  h1 {
+    text-transform: uppercase;
+    padding-top: 10rem;
+  }
+
+  p {
+    padding: 1.6rem 8rem;
+  }
+}
+
+.team-content {
+  display: flex;
+  justify-content: center;
+
+  .team-box {
+    background: $primary-background;
+    text-align: center;
+    width: 30.33%;
+    margin: 1rem;
+    color: $color-white;
+
+    img {
+      width: 100%;
+    }
+
+    .name {
+      text-transform: uppercase;
+      padding: 2rem;
+      color: $color-blue-1;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
+
+    .position {
+      padding: 2rem;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      margin: 2rem;
+    }
+  }
+}
+
+// Iphone 8 plus
+@media (max-width: 414px) {
+  #showcase {
+    color: $color-white;
+    text-align: center;
+    font-size: 1.6rem;
+
+    h1 {
+      text-transform: uppercase;
+      padding-top: 10rem;
+    }
+
+    p {
+      padding: 1.6rem 8rem;
+    }
+  }
+
+  .team-content {
+    display: inline-block;
+    justify-content: center;
+
+    margin: 0 0 0 6.4rem;
+
+    .team-box {
+      background: $primary-background;
+      text-align: center;
+      width: 30.33%;
+      margin: 1rem;
+      color: $color-white;
+      width: 27rem;
+
+      img {
+        width: 100%;
+      }
+
+      .name {
+        text-transform: uppercase;
+        padding: 2rem;
+        color: $color-blue-1;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .position {
+        padding: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 2rem;
+      }
+    }
+  }
+}
+
+//  Phones
+@media (min-width: 320px) and (max-width: 413px) {
+  #showcase {
+    color: $color-white;
+    text-align: center;
+    font-size: 1.6rem;
+
+    h1 {
+      text-transform: uppercase;
+      padding-top: 10rem;
+    }
+
+    p {
+      padding: 1.6rem 8rem;
+    }
+  }
+
+  .team-content {
+    display: inline-block;
+    justify-content: center;
+
+    margin: 0 0 0 4.3rem;
+
+    .team-box {
+      background: $primary-background;
+      text-align: center;
+      width: 30.33%;
+      margin: 1rem;
+      color: $color-white;
+      width: 27rem;
+
+      img {
+        width: 100%;
+      }
+
+      .name {
+        text-transform: uppercase;
+        padding: 2rem;
+        color: $color-blue-1;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .position {
+        padding: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 2rem;
+      }
+    }
+  }
+}
+
+// Ipad or tablet
+@media (min-width: 501px) and (max-width: 1023px) {
+  #showcase {
+    color: $color-white;
+    text-align: center;
+    font-size: 1.6rem;
+
+    h1 {
+      text-transform: uppercase;
+      padding-top: 10rem;
+    }
+
+    p {
+      padding: 1.6rem 8rem;
+    }
+  }
+
+  .team-content {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15rem 0;
+
+    .team-box {
+      background: $primary-background;
+      text-align: center;
+      width: 30.33%;
+      margin: 1rem;
+      color: $color-white;
+
+      img {
+        width: 100%;
+      }
+
+      .name {
+        text-transform: uppercase;
+        padding: 2rem;
+        color: $color-blue-1;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+
+      .position {
+        padding: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 2rem;
+      }
+    }
+  }
+}

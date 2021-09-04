@@ -1,0 +1,155 @@
+@mixin style-text($color, $font-size) {
+  color: $color;
+  font-weight: 500;
+  font-size: $font-size;
+  display: block;
+}
+
+.about-section {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin: 2rem 0;
+
+  &__header {
+    text-align: center;
+    position: relative;
+
+    &-logo {
+      background-image: url(../assets/img/Logo.png);
+      margin: 3rem auto;
+      border-radius: 50%;
+      width: 25rem;
+      height: 25rem;
+      background-size: cover;
+    }
+    h1 {
+      margin: 3rem auto;
+      font-size: 5.2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+  }
+
+  &__content {
+    font-weight: 500;
+    align-items: center;
+    margin: 3rem auto;
+    text-align: center;
+    width: 60%;
+
+    &-text {
+      margin: 0.8rem auto;
+      display: block;
+
+      &--orange {
+        @include style-text($color-orange-2, 2rem);
+
+        &italic {
+          @include style-text($color-orange-2, 2.7rem);
+          font-style: italic;
+        }
+      }
+
+      &--blue {
+        @include style-text($color-blue-2, 2rem);
+
+        &italic {
+          @include style-text($color-blue-2, 2.7rem);
+          font-style: italic;
+        }
+      }
+    }
+
+    &-button {
+      margin: 3rem auto;
+      display: block;
+    }
+
+    &-svg {
+      height: 10rem;
+      width: 25rem;
+    }
+  }
+}
+
+// Phone
+@media (min-width: 320px) and (max-width: 414px) {
+  @mixin style-text($color, $font-size) {
+    color: $color;
+    font-weight: 500;
+    font-size: $font-size;
+    display: block;
+  }
+
+  .about-section {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+    margin: 2rem 0;
+
+    &__header {
+      text-align: center;
+      position: relative;
+      margin: 0 0 0 -1.3rem;
+
+      &-logo {
+        background-image: url(../assets/img/Logo.png);
+        margin: 3rem auto;
+        border-radius: 50%;
+        width: 25rem;
+        height: 25rem;
+        background-size: cover;
+      }
+      h1 {
+        margin: 3rem auto;
+        font-size: 5.2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        line-height: 5rem;
+      }
+    }
+
+    &__content {
+      font-weight: 500;
+      align-items: center;
+      margin: 3rem auto;
+      text-align: center;
+      width: 60%;
+      margin: 0 0 0 8.5rem;
+
+      &-text {
+        margin: 0.8rem auto;
+        display: block;
+
+        &--orange {
+          @include style-text($color-orange-2, 2rem);
+
+          &italic {
+            @include style-text($color-orange-2, 2.7rem);
+            font-style: italic;
+          }
+        }
+
+        &--blue {
+          @include style-text($color-blue-2, 2rem);
+
+          &italic {
+            @include style-text($color-blue-2, 2.7rem);
+            font-style: italic;
+          }
+        }
+      }
+
+      &-button {
+        margin: 3rem auto;
+        display: block;
+      }
+
+      &-svg {
+        height: 10rem;
+        width: 25rem;
+      }
+    }
+  }
+}
